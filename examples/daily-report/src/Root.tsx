@@ -5,6 +5,7 @@ import { fetchKospi } from "./fetch/kospi";
 import { fetchUsdKrw } from "./fetch/exchange";
 import { fetchWeather } from "./fetch/weather";
 import { mockData } from "./fetch/mock";
+import "./fonts";
 
 const calc: CalculateMetadataFunction<DailyReportProps> = async ({ props }) => {
   if (process.env.USE_MOCK === "true") {

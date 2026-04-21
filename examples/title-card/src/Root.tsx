@@ -1,6 +1,7 @@
 import { Composition } from "remotion";
 import { TitleCard } from "./TitleCard";
 import { titleCardSchema, defaultProps } from "./schema";
+import "./fonts";
 
 export const Root = () => {
   return (
