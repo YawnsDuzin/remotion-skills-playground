@@ -24,13 +24,15 @@ cp skills/*.md .claude/skills/
 | [`data-fetch.md`](./data-fetch.md) | 외부 API + sha256 캐싱 | remotion-composition |
 | [`tts-korean.md`](./tts-korean.md) | CLOVA Voice 통합 | remotion-composition, data-fetch |
 | [`broll-composition.md`](./broll-composition.md) | Veo/Pexels B-roll + 데이터 오버레이 | remotion-composition |
+| [`code-tutorial.md`](./code-tutorial.md) | 코드 블록 타이핑 애니메이션 (바이브코딩) | remotion-composition, motion |
 
 ## 의존 그래프
 
 ```
 remotion-composition  (루트)
 ├── motion
-│   └── title-card
+│   ├── title-card
+│   └── code-tutorial
 ├── weather-menu
 ├── broll-composition
 └── data-fetch

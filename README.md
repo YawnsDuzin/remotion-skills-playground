@@ -7,8 +7,8 @@
 [![Last commit](https://img.shields.io/github/last-commit/yawnsduzin/remotion-skills-playground)](../../commits/main)
 [![Status](https://img.shields.io/badge/status-active%20curation-yellow)](./ROADMAP.md)
 [![Docs](https://img.shields.io/badge/docs-21%20pages-blue)](./docs)
-[![Skills](https://img.shields.io/badge/skills-7-orange)](./skills)
-[![Examples](https://img.shields.io/badge/examples-5-green)](./examples)
+[![Skills](https://img.shields.io/badge/skills-8-orange)](./skills)
+[![Examples](https://img.shields.io/badge/examples-6-green)](./examples)
 
 코드로 영상을 만드는 Remotion에, Claude Code가 "어떤 컴포넌트를 어떻게 조합할지" 자동으로 판단하게 해주는 Agent Skills를 얹는다.
 이 저장소 하나로 Remotion을 한국어로 배우고, Claude Code와 통합하고, 실제 운영 가능한 자동 영상 파이프라인까지 구축할 수 있도록 모든 자료를 한 곳에 모은다.
@@ -116,7 +116,7 @@ cd examples/title-card && npm install && npm start
 
 각 문서별 소요 시간·요약은 [`docs/README.md`](./docs/README.md).
 
-## 스킬 카탈로그 (7개)
+## 스킬 카탈로그 (8개)
 
 **설치** — 사용할 프로젝트 루트에서:
 
@@ -135,8 +135,9 @@ mkdir -p .claude/skills && cp /path/to/remotion-skills-playground/skills/*.md .c
 | [`skills/data-fetch.md`](./skills/data-fetch.md) | 외부 API 호출 + 캐싱 패턴 | composition |
 | [`skills/tts-korean.md`](./skills/tts-korean.md) | CLOVA Voice 통합 | composition, data-fetch |
 | [`skills/broll-composition.md`](./skills/broll-composition.md) | Veo/Pexels B-roll + 데이터 오버레이 | composition |
+| [`skills/code-tutorial.md`](./skills/code-tutorial.md) | 코드 블록 타이핑 애니메이션 (바이브코딩) | composition, motion |
 
-## 동작하는 예제 (5개)
+## 동작하는 예제 (6개)
 
 각 디렉토리에서 `npm install && npm start`로 즉시 실행. 상세는 [`examples/README.md`](./examples/README.md).
 
@@ -147,6 +148,7 @@ mkdir -p .claude/skills && cp /path/to/remotion-skills-playground/skills/*.md .c
 | [`examples/daily-report`](./examples/daily-report) | calculateMetadata, KOSPI/환율/날씨 + 캐싱 | 중상 |
 | [`examples/blog-summary`](./examples/blog-summary) | 마크다운 → TTS 내레이션 | 상 |
 | [`examples/finance-broll`](./examples/finance-broll) | OffthreadVideo + 데이터 오버레이 (B-roll 하이브리드) | 상 |
+| [`examples/code-tutorial`](./examples/code-tutorial) | 코드 블록 타이핑 + 커서 블링크 (바이브코딩 쇼츠) | 상 |
 
 ## FAQ
 

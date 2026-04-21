@@ -38,10 +38,17 @@
 - [x] `skills/broll-composition.md` — 데이터 + B-roll 레이어 규칙
 - [x] `<OffthreadVideo>` 실전 사용 예제 (이전엔 docs만 있었음)
 
+## v0.7 — 바이브코딩 튜토리얼 (완료)
+
+- [x] `examples/code-tutorial/` — 60초 "VIBE CODING · 1분" 세로 쇼츠
+- [x] `skills/code-tutorial.md` — 코드 블록 타이핑 애니메이션 규칙
+- [x] 사전 토큰화 + VSCode Dark+ 팔레트 + 2Hz 커서 블링크 패턴 확립
+
 ## v1.0 — 안정화 (진행 중)
 
-- [ ] 모든 예제(5개)에 데모 mp4 첨부 (`assets/demo/`)
+- [ ] 모든 예제(6개)에 데모 mp4 첨부 (`assets/demo/`)
 - [ ] `finance-broll`에 실제 Veo/Pexels B-roll 3개 첨부 + 데모 mp4
+- [ ] `code-tutorial`에 실제 Shiki 기반 동적 토큰화 데모 추가
 - [ ] 한국어 TTS 실비용 측정 후 `docs/03-patterns.md` 갱신
 - [ ] 외부 기여자 PR 1개 이상 머지
 - [ ] 한국어 블로그/유튜브 자료 5개 이상 큐레이션 ([`docs/04-references.md`](./docs/04-references.md))

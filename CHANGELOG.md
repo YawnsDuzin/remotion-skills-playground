@@ -4,8 +4,20 @@
 
 ## [Unreleased]
 
-- 예제 5개에 실제 데모 mp4 첨부 (ROADMAP v1.0)
+- 예제 6개에 실제 데모 mp4 첨부 (ROADMAP v1.0)
 - Cloud Run 워크플로우 예제 (ROADMAP v1.1)
+
+## [0.7.0] — 2026-04-21
+
+### 추가
+
+- 새 예제 `examples/code-tutorial/` — 60초 "VIBE CODING · 1분 설명" 세로 쇼츠
+  - 코드 블록 라인별 타이핑 애니메이션 (핵심 35초)
+  - 사전 토큰화 (Shiki 없이 의존성 최소) + VSCode Dark+ 팔레트
+  - 2Hz 커서 블링크, 현재 타이핑 라인 배경 하이라이트
+  - 5개 씬: Intro → Prompt 타이핑 → CodeBlock → ResultPreview → CTA
+- 새 스킬 `skills/code-tutorial.md` — 바이브코딩/개발 튜토리얼 쇼츠 컴포지션 규칙
+- README/examples README/skills README — 카운트 8스킬·6예제로 갱신
 
 ## [0.6.0] — 2026-04-21
 
