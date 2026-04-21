@@ -1,0 +1,45 @@
+name: 버그 리포트
+description: 문서나 예제 코드의 오류를 알려주세요
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        문서 오타·링크 깨짐·예제 코드 빌드 실패 등 명확한 버그만 받습니다.
+        주관적 평가에 대한 의견은 [이슈 → 일반](./?template=question.yml)으로.
+
+  - type: input
+    id: location
+    attributes:
+      label: 문제가 있는 파일
+      placeholder: "예: docs/02-tutorial.md, examples/weather-menu/src/Menu.tsx"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 어떤 문제인가
+      description: 무엇을 했고, 무엇을 기대했고, 실제 무엇이 일어났나
+    validations:
+      required: true
+
+  - type: textarea
+    id: env
+    attributes:
+      label: 환경 (해당 시)
+      placeholder: |
+        OS: macOS 15.4 (M2)
+        Node: 22.5.0
+        Remotion: 4.0.x
+        Claude Code: x.y.z
+    validations:
+      required: false
+
+  - type: textarea
+    id: error
+    attributes:
+      label: 에러 메시지 원문 (해당 시)
+      render: shell
+    validations:
+      required: false

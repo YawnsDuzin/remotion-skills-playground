@@ -1,0 +1,40 @@
+name: 한국어 자료 제보
+description: docs/04-references.md에 추가할 한국어 자료를 알려주세요
+labels: ["help wanted: korean-resource"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: 자료 제목
+      placeholder: "예: Remotion으로 한국어 쇼츠 자동화하기"
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      placeholder: "https://..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: 자료 유형
+      options:
+        - 블로그 글
+        - 유튜브 영상
+        - 발표 슬라이드
+        - 오픈소스 프로젝트
+        - 기타
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: 1~2줄 요약
+      description: 어떤 내용인지, 어떤 독자에게 유용한지
+    validations:
+      required: true
