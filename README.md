@@ -60,8 +60,8 @@ cd examples/title-card && npm install && npm start
 ```
 .
 ├── docs/              21개 한국어 문서 (입문 00~14 · 심화 15~20) + 인덱스 README
-├── skills/            6개 Agent Skill (.claude/skills/로 복사해 사용)
-├── examples/          4개 동작 예제 (npm install && npm start로 즉시 실행)
+├── skills/            8개 Agent Skill (.claude/skills/로 복사해 사용)
+├── examples/          6개 동작 예제 (npm install && npm start로 즉시 실행)
 ├── scripts/           폰트 다운로드 + CI 스크립트 (번역체·frontmatter 검사)
 ├── assets/            데모 영상/스크린샷 (v1.0 예정)
 ├── .github/           CI 워크플로우 · 이슈/PR 템플릿 · Dependabot
@@ -99,13 +99,15 @@ cd examples/title-card && npm install && npm start
 13. [`20-security`](./docs/20-security.md) — 보안
 14. [`examples/daily-report`](./examples/daily-report) — 자동 일일 리포트
 
-### 🟣 심화 / 스킬 작성자 (70분)
+### 🟣 심화 / 스킬 작성자 (90분)
 
 15. [`11-skills-authoring`](./docs/11-skills-authoring.md) — 스킬 만들기
 16. [`15-player`](./docs/15-player.md) — 웹 임베드
 17. [`16-images-video`](./docs/16-images-video.md) — 미디어 임베드
 18. [`17-subtitles`](./docs/17-subtitles.md) — 자막 (SRT/워드)
 19. [`18-fonts-deep-dive`](./docs/18-fonts-deep-dive.md) — 폰트 심화
+20. [`examples/finance-broll`](./examples/finance-broll) — 데이터 + Veo B-roll 하이브리드
+21. [`examples/code-tutorial`](./examples/code-tutorial) — 바이브코딩 쇼츠 (코드 타이핑 애니메이션)
 
 ## 문서 전체 인덱스 (21개)
 
@@ -155,13 +157,18 @@ mkdir -p .claude/skills && cp /path/to/remotion-skills-playground/skills/*.md .c
 <details>
 <summary><b>Claude Code 없이도 쓸 수 있나?</b></summary>
 
-예. `docs/`는 한국어 Remotion 교재로 독립 사용 가능, `examples/` 4개 모두 Remotion CLI만으로 실행된다. `skills/`만 Claude Code(또는 호환 에이전트) 있어야 의미가 있다.
+예. `docs/`는 한국어 Remotion 교재로 독립 사용 가능, `examples/` 6개 모두 Remotion CLI만으로 실행된다. `skills/`만 Claude Code(또는 호환 에이전트) 있어야 의미가 있다.
 </details>
 
 <details>
-<summary><b>API 키(KMA, CLOVA, AWS) 없이 돌려볼 수 있나?</b></summary>
+<summary><b>API 키(KMA, CLOVA, AWS, Veo) 없이 돌려볼 수 있나?</b></summary>
 
-예. `title-card`·`weather-menu`는 외부 API 전혀 불필요. `daily-report`는 `npm run build:mock`로 mock 데이터 렌더, `blog-summary`는 `USE_MOCK_TTS=true`로 무음 플레이스홀더 사용 가능.
+예. 6개 예제 모두 외부 키/자산 없이 빌드 가능:
+- `title-card`·`weather-menu`·`code-tutorial`: 외부 API 불필요
+- `daily-report`: `npm run build:mock`로 mock 데이터
+- `blog-summary`: `USE_MOCK_TTS=true`로 무음 플레이스홀더
+- `finance-broll`: `USE_MOCK_BROLL=true` 또는 B-roll mp4 없으면 그라데이션 폴백
+
 </details>
 
 <details>
