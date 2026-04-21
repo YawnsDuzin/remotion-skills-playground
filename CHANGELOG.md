@@ -7,6 +7,20 @@
 - 예제 4개에 실제 데모 mp4 첨부 (ROADMAP v1.0)
 - Cloud Run 워크플로우 예제 (ROADMAP v1.1)
 
+## [0.5.1] — 2026-04-21
+
+### 개선
+
+- README 전면 개편 — 첫 방문자 경험 강화
+  - 용어 미니 가이드 (Remotion · Claude Code · Agent Skills 3개 각 1줄)
+  - 저장소 성격 명시 (두진아 개인 큐레이션) + Claude Code 없이도 되는지 답
+  - 데모 자리 ASCII 플레이스홀더 (v1.0 전까지 공백 대체)
+  - 빠른 시작에 필요 환경 (Node 22 / Remotion 라이선스) 한 줄
+  - 저장소 지도 (디렉토리 tree)
+  - 스킬 설치 한 줄 (`mkdir -p .claude/skills && cp ...`)
+  - FAQ 섹션 7개 (접을 수 있는 `<details>`)
+  - 안정성 뱃지 `status-active%20curation-yellow` 추가
+
 ## [0.5.0] — 2026-04-21
 
 ### 추가
