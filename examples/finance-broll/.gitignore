@@ -1,0 +1,10 @@
+node_modules/
+out/
+.remotion/
+.cache/
+*.log
+.env
+.env.local
+public/broll/*.mp4
+public/broll/*.mov
+public/broll/*.webm
