@@ -1,0 +1,61 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/examples/title-card"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 3
+    commit-message:
+      prefix: "chore(title-card)"
+    groups:
+      remotion:
+        patterns: ["remotion", "@remotion/*"]
+      react:
+        patterns: ["react", "react-dom", "@types/react*"]
+
+  - package-ecosystem: "npm"
+    directory: "/examples/weather-menu"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 3
+    commit-message:
+      prefix: "chore(weather-menu)"
+    groups:
+      remotion:
+        patterns: ["remotion", "@remotion/*"]
+      react:
+        patterns: ["react", "react-dom", "@types/react*"]
+
+  - package-ecosystem: "npm"
+    directory: "/examples/daily-report"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 3
+    commit-message:
+      prefix: "chore(daily-report)"
+    groups:
+      remotion:
+        patterns: ["remotion", "@remotion/*"]
+      react:
+        patterns: ["react", "react-dom", "@types/react*"]
+
+  - package-ecosystem: "npm"
+    directory: "/examples/blog-summary"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 3
+    commit-message:
+      prefix: "chore(blog-summary)"
+    groups:
+      remotion:
+        patterns: ["remotion", "@remotion/*"]
+      react:
+        patterns: ["react", "react-dom", "@types/react*"]
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 3
+    commit-message:
+      prefix: "chore(ci)"
