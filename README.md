@@ -12,36 +12,31 @@
 ## 누구를 위한 저장소인가
 
 - React는 쓸 줄 알고, Claude Code는 들어본 적 있지만 Remotion은 처음인 2~5년 차 개발자
-- "AI 에이전트로 영상을 자동 생성한다"는 키워드로 온 시니어 개발자 — `docs/00-concepts.md`만 봐도 충분하다
+- "AI 에이전트로 영상을 자동 생성한다"는 키워드로 온 시니어 개발자 — [`docs/00-concepts.md`](./docs/00-concepts.md)만 봐도 충분하다
 - 한글 폰트, 한국어 TTS, 국내 API 연동에서 삽질한 기록이 필요한 사람
 
 ## 빠른 시작 (5분)
 
 ```bash
-# 1. 프로젝트 생성
-npx create-video@latest my-video --template=blank
-cd my-video
-
-# 2. Claude Code로 스킬 불러오기
-claude
-> /install-skill remotion-composition
-> "10초짜리 타이틀 카드 영상 만들어줘. 제목은 '안녕 리모션'"
-
-# 3. 미리보기
-npm start
+# 1. 이 저장소의 완성 예제를 받아 바로 실행
+git clone https://github.com/yawnsduzin/remotion-skills-playground
+cd remotion-skills-playground/examples/weather-menu
+npm install && npm start
 ```
 
-자세한 튜토리얼은 [`docs/02-tutorial.md`](./docs/02-tutorial.md) 참고.
+Claude Code로 직접 새 영상을 만들고 싶다면 [`docs/02-tutorial.md`](./docs/02-tutorial.md)로 이동.
 
 ## 무엇이 들어있나
 
-| 문서 | 내용 | 예상 시간 |
+| 경로 | 내용 | 예상 시간 |
 |---|---|---|
 | [`docs/00-concepts.md`](./docs/00-concepts.md) | Skills·Rule·Asset 개념 정리 | 6분 |
 | [`docs/01-setup.md`](./docs/01-setup.md) | OS별 환경 설정 + 한글 폰트 | 10분 |
 | [`docs/02-tutorial.md`](./docs/02-tutorial.md) | 10분 안에 첫 영상 렌더 | 15분 |
 | [`docs/03-patterns.md`](./docs/03-patterns.md) | 실전 시나리오 4가지 | 12분 |
 | [`docs/04-references.md`](./docs/04-references.md) | 원문/커뮤니티 링크 | 3분 |
+| [`skills/`](./skills) | 설치 가능한 스킬 파일 | — |
+| [`examples/`](./examples) | 바로 돌아가는 예제 프로젝트 | — |
 
 ## 왜 또 만들었나
 
@@ -50,8 +45,8 @@ npm start
 
 ## 기여
 
-버그/오타 제보는 이슈, 새 패턴 추가는 PR. 문서 스타일 가이드는 [`CONTRIBUTING.md`](./CONTRIBUTING.md)에 정리 예정.
+버그/오타는 이슈, 새 패턴은 PR. 외부 기여 범위와 PR 체크리스트는 [`CONTRIBUTING.md`](./CONTRIBUTING.md) 참고.
 
 ## 라이선스
 
-MIT. 저장소의 코드 조각은 그대로 복붙해 써도 된다. 스크린샷이나 예제 영상은 저작자 표기 부탁.
+MIT — [`LICENSE`](./LICENSE). 저장소의 코드 조각은 그대로 복붙해 써도 된다. 스크린샷이나 예제 영상은 저작자 표기 부탁.
