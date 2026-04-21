@@ -5,9 +5,12 @@ import { BlogSummary } from "./BlogSummary";
 import { blogSummarySchema, defaultProps, type BlogSummaryProps } from "./schema";
 import { parseMarkdown, buildScript } from "./fetch/parser";
 import { synthesize } from "./fetch/tts";
+import "./fonts";
+
+const FPS = 30;
+const INITIAL_DURATION_FRAMES = FPS * 60;
 
 const calc: CalculateMetadataFunction<BlogSummaryProps> = async ({ props }) => {
-  const fps = 30;
   const samplePath = path.join(process.cwd(), "sample-post.md");
   const { title, sentences } = await parseMarkdown(samplePath);
   const script = buildScript(title, sentences);
@@ -22,9 +25,9 @@ const calc: CalculateMetadataFunction<BlogSummaryProps> = async ({ props }) => {
     console.warn("TTS failed, using estimated duration:", e);
   }
 
-  const titleFrames = Math.round(2.5 * fps);
-  const ctaFrames = Math.round(2 * fps);
-  const totalFrames = Math.max(fps * 10, Math.round(audioDuration * fps) + titleFrames + ctaFrames);
+  const titleFrames = Math.round(2.5 * FPS);
+  const ctaFrames = Math.round(2 * FPS);
+  const totalFrames = Math.max(FPS * 10, Math.round(audioDuration * FPS) + titleFrames + ctaFrames);
 
   return {
     props: { ...props, title, sentences, audioFile, audioDuration },
@@ -36,8 +39,8 @@ export const Root = () => (
   <Composition
     id="BlogSummary"
     component={BlogSummary}
-    durationInFrames={fps()}
-    fps={30}
+    durationInFrames={INITIAL_DURATION_FRAMES}
+    fps={FPS}
     width={1080}
     height={1920}
     schema={blogSummarySchema}
@@ -45,7 +48,3 @@ export const Root = () => (
     calculateMetadata={calc}
   />
 );
-
-function fps() {
-  return 30 * 60;
-}
