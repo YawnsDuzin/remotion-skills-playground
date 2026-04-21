@@ -13,7 +13,7 @@
 
 - README 전면 개편 — 첫 방문자 경험 강화
   - 용어 미니 가이드 (Remotion · Claude Code · Agent Skills 3개 각 1줄)
-  - 저장소 성격 명시 (두진아 개인 큐레이션) + Claude Code 없이도 되는지 답
+  - 저장소 성격 명시 (개인 큐레이션) + Claude Code 없이도 되는지 답
   - 데모 자리 ASCII 플레이스홀더 (v1.0 전까지 공백 대체)
   - 빠른 시작에 필요 환경 (Node 22 / Remotion 라이선스) 한 줄
   - 저장소 지도 (디렉토리 tree)

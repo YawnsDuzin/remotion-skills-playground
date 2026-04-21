@@ -39,8 +39,8 @@ Remotion + Claude Code + Agent Skills 조합을 더 깊게 파고 싶을 때 보
 
 ## 한국어 자료
 
-- 두진아, "Claude Code로 쇼츠 자동화하기" — _(작성 예정, 2026-Q2)_
-- 두진아, 본 저장소 문서 세트 — [`docs/`](.) (현재 이 문서)
+- `@yawnsduzin`, "Claude Code로 쇼츠 자동화하기" — _(작성 예정, 2026-Q2)_
+- `@yawnsduzin`, 본 저장소 문서 세트 — [`docs/`](.) (현재 이 문서)
 - _Remotion 한국어 튜토리얼 영상 — 자료 구함_
 - _Agent Skills 한국어 해설 블로그 — 자료 구함_
 

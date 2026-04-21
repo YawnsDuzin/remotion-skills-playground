@@ -21,7 +21,7 @@
 
 ## 저장소 성격과 대상
 
-- **성격**: 두진아(`@yawnsduzin`)의 개인 학습 기록 + 한국어 자료 큐레이션 (MIT 공개, 외부 기여 환영하되 범위 제한 — [CONTRIBUTING.md](./CONTRIBUTING.md))
+- **성격**: `@yawnsduzin`의 개인 학습 기록 + 한국어 자료 큐레이션 (MIT 공개, 외부 기여 환영하되 범위 제한 — [CONTRIBUTING.md](./CONTRIBUTING.md))
 - **1차 독자**: React는 쓸 줄 알고 Claude Code는 들어봤지만 Remotion은 처음인 2~5년 차 한국 개발자
 - **2차 독자**: "AI 에이전트로 영상 자동 생성" 키워드로 온 시니어 — [`docs/00-concepts.md`](./docs/00-concepts.md)만 봐도 충분
 - **3차 독자**: 한글 폰트·한국어 TTS·국내 API 연동에서 삽질한 기록이 필요한 사람
