@@ -4,8 +4,20 @@
 
 ## [Unreleased]
 
-- 예제 4개에 실제 데모 mp4 첨부 (ROADMAP v1.0)
+- 예제 5개에 실제 데모 mp4 첨부 (ROADMAP v1.0)
 - Cloud Run 워크플로우 예제 (ROADMAP v1.1)
+
+## [0.6.0] — 2026-04-21
+
+### 추가
+
+- 새 예제 `examples/finance-broll/` — Remotion 데이터 + Veo/Pexels B-roll 하이브리드
+  - 30초 세로 KOSPI/환율 리포트 + 3개 B-roll 클립
+  - `<OffthreadVideo>` 임베드, `BrollClip` 컴포넌트(파일 누락 시 그라데이션 폴백)
+  - `BROLL_CLIPS` 매니페스트로 클립 메타데이터 + dim 강도 + 출처
+  - `public/broll/MANIFEST.md` — Veo 프롬프트 예시 + Pexels 링크 + ffmpeg 크롭 안내
+- 새 스킬 `skills/broll-composition.md` — 데이터 + B-roll 합성 규칙
+- README/docs/16-images-video/examples README/skills README — 카운트 7스킬·5예제로 갱신
 
 ## [0.5.1] — 2026-04-21
 

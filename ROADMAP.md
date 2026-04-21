@@ -32,9 +32,16 @@
 - [x] 치명적 버그 수정: README 뱃지, `blog-summary` Root/TTS, 캐럿 버전, 폰트 통일
 - [x] `scripts/fetch-pretendard.sh` 일괄 폰트 다운로드
 
+## v0.6 — B-roll 하이브리드 (완료)
+
+- [x] `examples/finance-broll/` — Remotion 데이터 + Veo/Pexels B-roll 합성 30초 리포트
+- [x] `skills/broll-composition.md` — 데이터 + B-roll 레이어 규칙
+- [x] `<OffthreadVideo>` 실전 사용 예제 (이전엔 docs만 있었음)
+
 ## v1.0 — 안정화 (진행 중)
 
-- [ ] 모든 예제에 데모 mp4 첨부 (`assets/demo/`)
+- [ ] 모든 예제(5개)에 데모 mp4 첨부 (`assets/demo/`)
+- [ ] `finance-broll`에 실제 Veo/Pexels B-roll 3개 첨부 + 데모 mp4
 - [ ] 한국어 TTS 실비용 측정 후 `docs/03-patterns.md` 갱신
 - [ ] 외부 기여자 PR 1개 이상 머지
 - [ ] 한국어 블로그/유튜브 자료 5개 이상 큐레이션 ([`docs/04-references.md`](./docs/04-references.md))

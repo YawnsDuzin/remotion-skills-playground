@@ -1,13 +1,13 @@
 # 예제 인덱스
 
-4개 모두 `npm install && npm start`로 즉시 실행된다. 난이도 순으로 정렬.
+5개 모두 `npm install && npm start`로 즉시 실행된다. 난이도 순으로 정렬.
 
 ## 실행 전 공통 준비
 
 한글 폰트는 별도 다운로드 필요:
 
 ```bash
-# 레포 루트에서 — 4개 예제 모두에 Pretendard 설치
+# 레포 루트에서 — 5개 예제 모두에 Pretendard 설치
 bash scripts/fetch-pretendard.sh
 ```
 
@@ -52,6 +52,18 @@ cd examples/daily-report && npm install && npm run build:mock
 cd examples/blog-summary && npm install
 USE_MOCK_TTS=true npm start  # 키 없이 미리보기 (_silent.mp3 필요)
 ```
+
+### 5. [`finance-broll`](./finance-broll) — 난이도 상 (60분+)
+
+KOSPI/환율 데이터 카드 사이에 AI 생성(Veo) 또는 스톡(Pexels) **B-roll**을 끼워 넣는 30초 세로 영상. 데이터 정확성과 영상 완성도를 모두 잡는 하이브리드 패턴.
+**학습 포인트**: `<OffthreadVideo>`, B-roll 위 데이터 오버레이, 매니페스트 + dim, mock 폴백.
+
+```bash
+cd examples/finance-broll && npm install
+npm run build:mock     # B-roll 자산 없이 그라데이션 폴백으로 렌더
+```
+
+B-roll 자산 가이드는 [`examples/finance-broll/public/broll/MANIFEST.md`](./finance-broll/public/broll/MANIFEST.md), 합성 규칙은 스킬 [`broll-composition`](../skills/broll-composition.md).
 
 ## 직접 만들 때 참고
 

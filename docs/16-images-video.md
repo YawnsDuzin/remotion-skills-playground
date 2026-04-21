@@ -134,4 +134,8 @@ await prefetch(staticFile("big-intro.mp4"), { method: "blob-url" });
 4. **원격 URL의 404가 렌더 통째로 죽임** — `<Img>`는 로드 실패 시 throw. `onError`로 fallback 컴포넌트 렌더
 5. **HEIC/HEIF 이미지** — iOS 기본 포맷. Chromium이 직접 디코드 못함. JPG/PNG로 변환 후 사용
 
+## 실전 예제 — 데이터 + B-roll 하이브리드
+
+본 문서의 패턴을 묶은 완성 예제: [`examples/finance-broll/`](../examples/finance-broll). 30초 KOSPI/환율 리포트의 씬 사이에 Veo 또는 Pexels B-roll을 `<OffthreadVideo>`로 끼워넣고, 데이터 카드를 `AbsoluteFill` 오버레이로 합성한다. 합성 규칙 스킬은 [`skills/broll-composition.md`](../skills/broll-composition.md).
+
 다음 — 비디오에 자막을 얹으려면 [`docs/17-subtitles.md`](./17-subtitles.md).

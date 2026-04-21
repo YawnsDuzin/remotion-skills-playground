@@ -23,6 +23,7 @@ cp skills/*.md .claude/skills/
 | [`weather-menu.md`](./weather-menu.md) | 날씨별 카페 메뉴 세로 쇼츠 | remotion-composition |
 | [`data-fetch.md`](./data-fetch.md) | 외부 API + sha256 캐싱 | remotion-composition |
 | [`tts-korean.md`](./tts-korean.md) | CLOVA Voice 통합 | remotion-composition, data-fetch |
+| [`broll-composition.md`](./broll-composition.md) | Veo/Pexels B-roll + 데이터 오버레이 | remotion-composition |
 
 ## 의존 그래프
 
@@ -31,6 +32,7 @@ remotion-composition  (루트)
 ├── motion
 │   └── title-card
 ├── weather-menu
+├── broll-composition
 └── data-fetch
     └── tts-korean
 ```
