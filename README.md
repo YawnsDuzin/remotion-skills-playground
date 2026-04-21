@@ -7,7 +7,7 @@
 [![Last commit](https://img.shields.io/github/last-commit/yawnsduzin/remotion-skills-playground)](../../commits/main)
 [![Docs](https://img.shields.io/badge/docs-15%20pages-blue)](./docs)
 [![Skills](https://img.shields.io/badge/skills-6-orange)](./skills)
-[![Examples](https://img.shields.io/badge/examples-3-green)](./examples)
+[![Examples](https://img.shields.io/badge/examples-4-green)](./examples)
 
 코드로 영상을 만드는 Remotion에, Claude Code가 "어떤 컴포넌트를 어떻게 조합할지" 자동으로 판단하게 해주는 Agent Skills를 얹는다.
 이 저장소 하나로 Remotion을 한국어로 배우고, Claude Code와 통합하고, 실제 운영 가능한 자동 영상 파이프라인까지 구축할 수 있도록 모든 자료를 한 곳에 모은다.
