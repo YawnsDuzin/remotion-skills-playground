@@ -14,8 +14,16 @@
 - 심화 문서 6개: `docs/15-player.md` ~ `docs/20-security.md`
 - 디렉토리 인덱스: `docs/README.md`, `skills/README.md`, `examples/README.md`
 - 리포 위생: `.nvmrc`, `CHANGELOG.md`, `SECURITY.md`, `.github/dependabot.yml`
-- CI 강화: 번역체 검사, 스킬 frontmatter 검증
+- CI 강화: 번역체 검사, 스킬 frontmatter 검증, smoke render (1프레임 PNG)
 - `scripts/fetch-pretendard.sh` — 예제 4개 일괄 폰트 다운로드
+- `scripts/check-translation-style.sh`, `scripts/check-skill-frontmatter.mjs`
+
+### 크로스링크
+
+- `docs/00-concepts.md` 끝 → `05-core-api`, `01-setup`, `14-glossary` 링크
+- `docs/03-patterns.md` 매트릭스: 가상 스킬(`tts*`, `data-fetch*`) → 실제 파일명 반영
+- `docs/04-references.md`: 내부 문서 21개 전체 바로가기 추가
+- `README.md`: 학습 경로 4개 트랙으로 확장, 심화 문서 6개 반영
 
 ### 수정
 
